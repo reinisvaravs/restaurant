@@ -21,32 +21,38 @@
     </div>
     <div id="darba-laiks">
         <div id="darba-laiks-container">
-            <div id="adrese" class="hidden">
-                <img src="./images/loc.png" class="icon">
-                <p class="darba-laiks-p">ADRESE</p>
-                <p class="adrese hide-small">Cukura iela 21, Jelgava</p>
-                <p class="adrese show-small">Cukura iela 21</p>
-                <p class="adrese show-small">Jelgava</p>
-                <p class="adrese" id="lat">Latvija</p>
+            <div id="adrese">
+                <div class="info-container hidden">
+                    <img src="./images/loc.png" class="icon">
+                    <p class="darba-laiks-p">ADRESE</p>
+                    <p class="adrese hide-small">Cukura iela 21, Jelgava</p>
+                    <p class="adrese show-small">Cukura iela 21</p>
+                    <p class="adrese show-small">Jelgava</p>
+                    <p class="adrese" id="lat">Latvija</p>
+                </div>
             </div>
-            <div id="darba-laiki" class="hidden2">
-                <img src="./images/clock.png" class="icon">
-                <p class="darba-laiks-p">DARBA LAIKS</p>
-                <p class="laiks" id="d1">P. 08:30-23:00</p>
-                <p class="laiks" id="d2">O. 08:30-23:00</p>
-                <p class="laiks" id="d3">T. 08:30-23:00</p>
-                <p class="laiks" id="d4">C. 08:30-23:00</p>
-                <p class="laiks" id="d5">P. 08:30-24:00</p>
-                <p class="laiks" id="d6">S. 12:00-24:00</p>
-                <p class="laiks" id="d7">Sv. 12:00-23:00</p>
+            <div id="darba-laiki">
+                <div class="info-container hidden2">
+                    <img src="./images/clock.png" class="icon">
+                    <p class="darba-laiks-p">DARBA LAIKS</p>
+                    <p class="laiks" id="d1">P. 08:30-23:00</p>
+                    <p class="laiks" id="d2">O. 08:30-23:00</p>
+                    <p class="laiks" id="d3">T. 08:30-23:00</p>
+                    <p class="laiks" id="d4">C. 08:30-23:00</p>
+                    <p class="laiks" id="d5">P. 08:30-24:00</p>
+                    <p class="laiks" id="d6">S. 12:00-24:00</p>
+                    <p class="laiks" id="d7">Sv. 12:00-23:00</p>
+                </div>
             </div>
-            <div id="email" class="hidden3">
-                <img src="./images/email.png" class="icon">
-                <p class="darba-laiks-p">E-PASTS</p>
-                <p class="adrese"><a href="mailto:viedirestorans@gmail.com" class="email">viedirestorans@gmail.com</a></p>
+            <div id="email">
+                <div class="info-container hidden3">
+                    <img src="./images/email.png" class="icon">
+                    <p class="darba-laiks-p">E-PASTS</p>
+                    <p class="adrese"><a href="mailto:viedirestorans@gmail.com" class="email">viedirestorans@gmail.com</a></p>
+                </div>
             </div>
         </div>
-        <div id="soc-med-container">
+        <div id="soc-med-container" class="hidden4">
             <a href="https://www.facebook.com/viedirestorans/" target="_blank">
                 <img src="./images/fb.png" class="soc-med">
             </a>
@@ -59,7 +65,9 @@
         <p id="author"><a href="https://reinisvaravs.github.io/" target="_blank">Izstrādātājs: Reinis R. Vāravs (2024)</a></p>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

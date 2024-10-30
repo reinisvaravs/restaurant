@@ -1,3 +1,17 @@
+gsap.registerPlugin(ScrollTrigger)
+
+const lenis = new Lenis();
+
+lenis.on("scroll", ScrollTrigger.update);
+
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+
+gsap.ticker.lagSmoothing(0);
+
+
+
 // Highlights current day in Darba Laiks
 document.querySelector(`#d${(new Date()).getDay()}`).style.fontWeight = "900"
 
@@ -34,5 +48,5 @@ const observer = new IntersectionObserver((entries) => {
     })
 })
 
-const hiddenElements = document.querySelectorAll(".hidden, .hidden1, .hidden2, .hidden3")
+const hiddenElements = document.querySelectorAll(".hidden, .hidden1, .hidden2, .hidden3, .hidden4")
 hiddenElements.forEach((el) => observer.observe(el))
